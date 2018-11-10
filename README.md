@@ -1,10 +1,10 @@
 # sandbox
 sandbox
 
-`span` not allowed:
+`span` color not allowed:
 <span style="color: orange">sdlkfdslkfdsklf</span>
 
-`div` allowed:
+`div` color not allowed:
 <div style="color: orange">sdlkfdslkfdsklf</div>
 
 [link to Work in progress](#work-in-progress)
