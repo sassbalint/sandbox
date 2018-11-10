@@ -1,7 +1,7 @@
 # sandbox
 sandbox
 
-<span style="font-color: orange">sdlkfdslkfdsklf</span>
+<span style="color: orange">sdlkfdslkfdsklf</span>
 
 [link to Work in progress](#work-in-progress)
 
