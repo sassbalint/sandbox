@@ -1,5 +1,21 @@
 # sandbox
 
+# kód megy felsorolásba? MEGY! :)
+
+1. sdfsf
+   asdfsdfsdf
+2. sdfsdfsdf
+gfdfgdfgf
+3. erwerr
+```
+code
+```
+4. asdf sdf
+   ```
+   code
+   ```
+   
+
 # outputs
 
 Az _outputs_ mappa tartalmazza a projektben használt scriptek _kisebb méretű_ kimeneteit (a segédanyag-jellegűeket, pl. különféle listákat). Ezek a következők:
