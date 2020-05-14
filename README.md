@@ -11,9 +11,8 @@ The following steps are to prepare Wikipedia corpus for pretraining. However, th
    ```
    git clone https://github.com/attardi/wikiextractor
    python3 wikiextractor/WikiExtractor.py -o out -b 1000M enwiki-latest-pages-articles.xml
-   ```
-   
-   Running time can be 5-10 minutes/GB.
+   ```  
+   Running time can be 5-10 minutes/GB.  
    _output:_ `out` directory
 3. Run:
    ```
