@@ -1,5 +1,5 @@
 
-all: glue_punctuation
+all:
 	 @echo "choose explicit target = type 'make ' and press TAB"
 
 # !!! git diff-et nem zavarja, hogy másképp vannak a sortörések! (ugye a sota az spl)
