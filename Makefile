@@ -17,6 +17,14 @@ to_trivial_spl:
 	cat $(FILE) | python3 to_trivial_spl.py > $(FILE).trivial_spl
 
 # XXX works on "sota" 0bfca68 as input
+# |nem| |volt| ,| |csak| |ült|
+# =>
+# nem volt, csak ült
+# azaz:
+# '| |' = ' '
+# '| '  = ''
+# ' |'  = ''
+# plusz még a sorok elejéről/végéről is lekerül a '|'
 glue_punctuation:
 	cat $(FILE) | python3 glue_punctuation.py | sed "s/| |/ /g;s/| //g;s/ |//g;s/^|//;s/|$$//" > $(FILE).glued_punct
 

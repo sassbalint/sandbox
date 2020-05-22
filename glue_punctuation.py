@@ -6,22 +6,27 @@ E.g. könyv , => könyv, or ( olasz ) => (olasz)
 
 import fileinput
 
+PRE = set('.,:;?!)}]*')
+PRE.add('...')
+POST = set('({[')
+
+SPACE = ' '
+NEWLINE = '\n'
+
 def glue_punctuation():
     """Do the thing."""
     for line in fileinput.input():
-        tokens = line.split(' ')
+        tokens = line.split(SPACE)
+
         for token in tokens:
             token_with_newline = token
-            token = token.rstrip('\n')
-            end_wsp = ' ' if token == token_with_newline else '\n'
+            token = token.rstrip(NEWLINE)
+            end_wsp = SPACE if token == token_with_newline else NEWLINE
 
-            pre = False
-            post = False
             # TODO nem trivi írásjelek: - ' "
-            if token and token in '.,:;?!)}]*' or token == '...':
-                pre = True
-            if token and token in '({[':
-                post = True
+            pre = token and token in PRE
+            post = token and token in POST
+
             print("{}{}{}".format(
                 '' if pre else '|',
                 token,
