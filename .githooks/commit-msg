@@ -12,7 +12,7 @@ then
     exit 0
 else
     echo "Failed!"
-    echo " *** Please a [add], [fix] .. marker at the beg of line"
+    echo " *** Please add [add], [fix] ... marker at the beg of line"
     echo
     exit 1
 fi
