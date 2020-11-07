@@ -2,6 +2,6 @@
 
 echo
 echo " *** Thank you for your hard work! :)"
-echo " *** Do not forget to `git push`!"
+echo " *** Do not forget to git push!"
 echo
 
