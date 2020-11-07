@@ -6,14 +6,18 @@ echo -n " *** Checking commit message... "
 
 # $1 is a filename containing the commit msg
 
-if grep -q "^\[" $1
+if egrep -q "^\[(add|fix|mod|cos|ref)\] " $1
 then
     echo "OK."
     exit 0
 else
-    echo "Failed!"
-    echo " *** Please add [add], [fix] ... marker at the beg of line"
-    echo
+    echo "Failed! Commit aborted!"
+    echo " *** Please prefix you commit msg with a marker:"
+    echo "     [add] add significat new stuff"
+    echo "     [fix] correct an error, fix a bug"
+    echo "     [mod] some modification"
+    echo "     [cos] cosmetics"
+    echo "     [ref] refactoring"
     exit 1
 fi
 
