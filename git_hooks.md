@@ -2,7 +2,7 @@
 
 ### install
 
-You __need to__ install git hooks by running:__
+You __need to__ install git hooks by running:
 
 ```bash
 .githooks/install
@@ -10,8 +10,8 @@ You __need to__ install git hooks by running:__
 
 ### usage
 
-After installation do some simple change, try to commit
-and see what is happening and the messages what you get. :) 
+After installation do some simple changes in the repo (eg. `touch f`), try to commit
+and see what is happening and pay attention to the messages what you get. :) 
 
 ### info
 
