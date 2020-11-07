@@ -30,6 +30,6 @@ Why? git hooks must be in the `.git/hooks` directory.
 The problem is that, being in the git inner area, this directory is __not__ part of the repo!
 To be able to version control our hooks _and_ to be able to use hooks in every clone
 we store our git hooks in the `.githooks` directory. 
-As git hooks __must__ be accessible cia `.git/hooks` to use them,
+As git hooks __must__ be accessible via `.git/hooks` to use them,
 we just convert the latter to a link to `.githooks`.
 
