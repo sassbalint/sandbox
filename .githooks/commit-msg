@@ -1,0 +1,20 @@
+#!/bin/sh
+
+echo
+
+echo -n " *** Checking commit message... "
+
+# $1 is a filename containing the commit msg
+
+if grep -q "^\[" $1
+then
+    echo "OK."
+    exit 0
+else
+    echo "Failed!"
+    echo " *** Please a [add], [fix] .. marker at the beg of line"
+    echo
+    exit 1
+fi
+
+echo
