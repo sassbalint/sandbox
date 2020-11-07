@@ -5,5 +5,5 @@ echo " *** Installing git hooks!"
 echo
 
 rm -rf .git/hooks
-ln -s .githooks .git/hooks
+ln -s ../.githooks .git/hooks
 
