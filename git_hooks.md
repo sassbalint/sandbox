@@ -33,3 +33,9 @@ we store our git hooks in the `.githooks` directory.
 As git hooks __must__ be accessible via `.git/hooks` to use them,
 we just convert the latter to a link to `.githooks`.
 
+A git hook is a script, a program.\
+It must be in the `.git/hooks` directory in a repo.\
+There is a fixed set of git hooks available: `post-commit`, `pre-push` etc.\
+git hooks are run by git _at a specific moment_ which can be guessed from the name of the hook.\
+_How it works:_ if the hooks exit status is 0 (zero) then the processing continues, if not, the processing is aborted.\
+That's it.
